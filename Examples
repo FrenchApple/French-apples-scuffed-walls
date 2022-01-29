@@ -1,0 +1,99 @@
+# ScuffedWalls v2.0.1
+
+# Documentation on functions can be found at
+# https://github.com/thelightdesigner/ScuffedWalls/blob/main/Functions.md
+            
+# DM @thelightdesigner#1337 for more help?
+
+# Using this tool requires an understanding of Noodle Extensions.
+# https://github.com/Aeroluna/Heck/wiki
+
+# Playtest your maps
+
+Workspace:Default
+
+
+0: Import
+   Path:ExpertPlusLawless_Old.dat
+
+34:AppendToAllNotesBetween
+  tobeat:99
+  AnimatePosition:[0,0,-20,0],[0,0,0,0.5,"easeOutExpo"]
+  AnimateScale: [1.50,1.50,1.50,1,"easeOutExpo"]
+  DisableSpawnEffect:true
+  AnimateDissolve:[0.50,0.50],[0.50,0.50],[0.50,0.50]
+  ----------------------------------------------------------------
+  When spawns it's dissovles but not fully. You can also add AnimateDissolveArrow:[0.50,0.50],[0.50,0.50],[0.50,0.50], which will dissolve the arrow too.
+  
+  
+  --------------------------------------------------------------------
+  Help_yourself
+  
+  104:AppendToAllNotesBetween
+  tobeat:9999
+  Njsoffset:Random(1,3)
+  AnimatePosition:[Random(-7,6),Random(-6,6),0,0],[0,0,0,0.35,"easeOutCubic"],[0,0,0,1]
+  AnimateDissolve:[0,0],[1,0.1],[1,1]
+  DisableSpawnEffect:true
+  
+    },
+  "_version" : "2.2.0",
+  "_customData" : {
+    "_customEvents" : [
+      {
+        "_time" : 0,
+        "_type" : "AnimateTrack",
+        "_data" : {
+          "_position" : [
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "_duration" : 0.1,
+          "_track" : "BigMovement"
+        }
+      },
+      {
+        "_time" : 0,
+        "_type" : "AssignPlayerToTrack",
+        "_data" : {
+          "_track" : "BigMovement"
+        }
+      },
+      {
+        "_time" : 0,
+        "_type" : "AssignTrackParent",
+        "_data" : {
+          "_parentTrack" : "BigMovement",
+          "_childrenTracks" : [
+            "rightnotes",
+            "leftnotes"
+          ]
+        }
+      },
+      {
+        "_time" : 103.484,
+        "_type" : "AnimateTrack",
+        "_data" : {
+          "_position" : [
+            [
+              3900000,
+              0,
+              0,
+              0
+            ]
+          ],
+          "_duration" : 0.1,
+          "_track" : "BigMovement"
+        }
+      }
+    ],
+    "_time" : 1.816
+  },
+
+I lost the scuffed walls file for the player movement ;-;
+
+----------------------------------------------------------------------------------------------------
