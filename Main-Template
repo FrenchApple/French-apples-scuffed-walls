@@ -1,0 +1,45 @@
+# ScuffedWalls v2.0.1
+
+# Documentation on functions can be found at
+# https://github.com/thelightdesigner/ScuffedWalls/blob/main/Functions.md
+            
+# DM @thelightdesigner#1337 for more help?
+
+# Using this tool requires an understanding of Noodle Extensions.
+# https://github.com/Aeroluna/Heck/wiki
+
+# Playtest your maps
+
+Workspace:Default
+
+
+0: Import
+   Path:ExpertPlusLawless_Old.dat
+
+Beat Start:AppendToAllNotesBetween
+  tobeat:End beat
+  AnimatePosition: Animation position 
+  AnimateScale: Animation scale
+  DisableSpawnEffect: t/f
+  AnimateDissolve: Dissolve
+  
+  Beat Start:TextToWall
+  Path: font file
+  line: Type here
+  line: Type here or delete
+  letting: N/a
+  leading:N/a
+  thicc: thiccniss of border
+  spreadspawntime: The scpred
+  size: SIze ofc
+  position:Position
+  animatedefiniteposition:idk
+  
+  1:Environment
+    id:^BigMirrorEnvironment\.\[0]Environment\.\[18]DoubleColorLaser$
+    lookupMethod:Regex
+    position:[8,1.667,39]
+    track:DoubleColorLaser
+    active:true  
+    
+    Go to https://github.com/thelightdesigner/ScuffedWalls/blob/main/Functions.md for more template
